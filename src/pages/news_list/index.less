@@ -1,0 +1,104 @@
+@black: #333;
+@lightGray: #eee;
+@red: #e4007e;
+.bgimg(@size){
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: @size;
+}
+// 新闻动态
+.news-container{
+    background-image: url("/public/img/news-bg.jpg");
+    padding-top:80px;
+    padding-bottom: 80px;
+    .title{
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 50px;
+        .cn-title{
+            color: #3f3f3f;
+            font-size: 28px;
+            font-weight: inherit;
+        }
+        .en-title{
+            color:#7f7f7f;
+            font-size:16px;
+            font-weight: inherit;
+        }
+    }
+    ul.news-list{
+        li.news-item{
+            width: calc(100% / 3 - 30px);
+            margin: 0 15px;
+            .img{
+                margin-bottom: 20px;
+                padding-top:80%;
+                .bgimg(cover);
+            }
+            .new-title{
+                font-size: 16px;
+                margin-bottom: 11px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .new-date{
+                margin-bottom: 10px;
+                font-size:12px;
+                color: #666;
+                padding: 10px 0;
+                margin-bottom:15px;
+                position: relative;
+                border-bottom: 1px solid #ccc;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width:0;
+                    height: 1px;
+                    background-color: #e4007e;
+                    bottom: 0;
+                    left:0;
+                    transition: .6s;
+                }
+            }
+            .new-note{
+                color: #999;
+                font-size: 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            &:hover{
+                .new-title{
+                    color: #e4007e;
+                }
+                .new-date{
+                    border-bottom:1px solid transparent;
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.pagelist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+    a{
+        border: 1px solid #bcbcbc;
+        border-radius: 4px;
+        padding: 4px 6px;
+        margin: 0 4px;
+        font-size: 12px;
+        &[href="javascript:;"]{
+            cursor: auto;
+        }
+        &.active{
+            color: #e4007e;
+        }
+    }
+}

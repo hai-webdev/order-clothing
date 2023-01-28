@@ -1,0 +1,130 @@
+@media screen and (max-width: 1440px) {
+  section .center80 {
+    width: 96%;
+  }
+  .product-container ul.product-list {
+    margin-left: 10px;
+    width: calc(100% - 160px);
+  }
+  .about-container .about-left .about-title {
+    font-size: 36px;
+    padding-top: 100px;
+    margin-bottom: 20px;
+  }
+  .about-container .about-left {
+    padding-right: 20px;
+  }
+  .about-container .about-left .note {
+    font-size: 14px;
+    line-height: 2.2;
+  }
+  .advantage-container {
+    .advantage-wrapper {
+      ul.advantage-right-list {
+        li.advantage-right-item {
+          margin-bottom: 30px;
+          .num {
+            width: calc(30px * 1.5);
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+            margin-right: 15px;
+            &:after {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .cont {
+            width: 100%;
+            .title {
+              font-size: 18px;
+              margin-bottom: 0;
+            }
+            .note {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-container {
+    .about-left {
+      .about-title {
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-container {
+    padding-top: 5px;
+    .center80 {
+      ul.product-list {
+        width: 100%;
+      }
+    }
+  }
+  section.about-container {
+    .center80 {
+      .about-left,
+      .about-right {
+        width: 96%;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .about-left {
+        margin-bottom: 10px;
+      }
+      .about-right {
+        width: 100%;
+      }
+    }
+  }
+  .success-case {
+    .pic-wrapper {
+      .left-pic,
+      .center-pic-list,
+      .right-pic {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .advantage-container {
+    .advantage-wrapper {
+      .advantage-left,
+      ul.advantage-right-list {
+        width: 100%;
+      }
+      ul.advantage-right-list {
+        padding: 20px;
+        li.advantage-right-item {
+          .num {
+            width: calc( 50px * 1.5);
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            margin-right: 50px;
+            &::after {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .news-container {
+    ul.news-list {
+      li.news-item {
+        margin: 0 5px 30px;
+        width: calc(50% - 10px);
+      }
+    }
+  }
+}

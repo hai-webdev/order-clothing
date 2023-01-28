@@ -1,0 +1,326 @@
+@black: #333;
+@lightGray: #eee;
+@red: #e4007e;
+.bgimg(@size){
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: @size;
+}
+
+// 产品内容
+.product-container{
+    background-color: #fff;
+    padding-top: 40px;
+    .left-aside {
+        width: 220px;
+      }
+    ul.product-list{
+        margin-left: 30px;
+        width: calc(100% - 250px);
+        li.product-item{
+            margin: 0 10px 20px;
+            width: calc(100% / 3 - 20px);
+            transition: .4s;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            }
+            .title{
+                padding: 25px 18px;
+                font-size: 16px;
+                text-align: center;
+                line-height: 1.5;
+                background-color: #f2f2f2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+// 关于我们
+
+.about-container{
+    margin-top: 65px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: #fff;
+    .about-left{
+        padding-right: 50px;
+        box-sizing: border-box;
+        .about-title{
+            font-size: 40px;
+            display: block;
+            font-weight: bold;
+            padding-top: 100px;
+            position: relative;
+            margin-bottom: 50px;
+            span{
+                position: relative;
+                z-index: 1;
+            }
+            img.pos-img{
+                position: absolute;
+                bottom: 0;
+                left: -8%;
+                bottom: 10px;
+            }
+        }
+        .note{
+            font-size: 14px;
+            color:#666;
+            line-height: 2.5;
+            margin-bottom: 30px;
+            p{
+                text-indent: 28px;
+            }
+        }
+        .more{
+            font-family: unset;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            span{
+                margin-right: 10px;;
+            }
+            img{
+                display: none;
+            }
+            img.more-img{
+                display: block;
+            }
+            &:hover{
+                color: #e36c09;
+                img.more-img{
+                    display: none;
+                }
+                img.more-img-hover{
+                    display: block;
+                }
+            }
+        }
+    }
+    .about-right{
+        // width:
+    }
+}
+
+// 成功案例
+
+.success-case{
+    background-color: #f2f2f2;
+    h2{
+        font-size: 30px;
+        color: #3f3f3f;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 25px;
+        background-color: #fff;
+    }
+    .pic-wrapper{
+        img{
+            display: block;
+            width: 100%;
+        }
+        .left-pic,
+        .right-pic{
+            width:25%;
+            box-sizing: border-box;
+            overflow: hidden;
+            img{
+                transition: .6s;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .left-pic{
+            padding-right:5px;
+        }
+        .right-pic{
+            padding-left:5px;
+        }
+        .center-pic-list{
+            width: 50%;
+            .center-pic-item{
+                width: 50%;
+                box-sizing: border-box;
+                padding: 0 5px;
+                margin-bottom: 10px;
+                position: relative;
+                overflow: hidden;
+                h3{
+                    position: absolute;
+                    bottom: 0;
+                    width:calc(100% - 10px);
+                    font-size: 14px;
+                    line-height: 3;
+                    color: white;
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    transform: translateY(42px);
+                    transition: .6s;
+                }
+                &:hover{
+                    h3{
+                        transform: translateY(0);
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+// 我们的优势
+
+.advantage-container{
+    background-color: #fff;
+    padding-top:80px;
+    .title{
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 50px;
+        .cn-title{
+            color: #3f3f3f;
+            font-size: 26px;
+            font-weight: inherit;
+        }
+        .en-title{
+            color:#d8d8d8;
+            font-size:12px;
+            font-weight: inherit;
+        }
+    }
+    .advantage-wrapper{
+        .advantage-left{
+            img{
+                width: 100%;
+            }
+        }
+        ul.advantage-right-list{
+            padding: 10px 40px;
+            box-sizing: border-box;
+            li.advantage-right-item{
+                margin-bottom: 50px;
+                display: flex;
+                align-items: center;
+                .num{
+                    width: calc(40px * 1.5);
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    position: relative;
+                    color: white;
+                    font-size: 22px;
+                    z-index: 1;
+                    margin-right: 50px;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 40px;
+                        height: 40px;
+                        background-color: #333;
+                        z-index: -1;
+                        transform: rotateZ(45deg);
+                    }
+                }
+                .cont{
+                    text-align: left;
+                    width: calc(100% - 90px);
+                    .title{
+                        font-size: 24px;
+                        color: #37373f;
+                        text-align: inherit;
+                        margin-bottom: 10px;
+                    }
+                    .note{
+                        font-size: 14px;
+                        font-size: #7f7f7f;
+                        text-align: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 新闻动态
+
+.news-container{
+    background-image: url("/public/img/news-bg.jpg");
+    padding-top:80px;
+    padding-bottom: 80px;
+    .title{
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 50px;
+        .cn-title{
+            color: #3f3f3f;
+            font-size: 28px;
+            font-weight: inherit;
+        }
+        .en-title{
+            color:#7f7f7f;
+            font-size:16px;
+            font-weight: inherit;
+        }
+    }
+    ul.news-list{
+        li.news-item{
+            width: calc(100% / 3 - 30px);
+            margin: 0 15px;
+            .img{
+                margin-bottom: 20px;
+                padding-top:80%;
+                .bgimg(cover);
+            }
+            .new-title{
+                font-size: 16px;
+                margin-bottom: 11px;
+            }
+            .new-date{
+                margin-bottom: 10px;
+                font-size:12px;
+                color: #666;
+                padding: 10px 0;
+                margin-bottom:15px;
+                position: relative;
+                border-bottom: 1px solid #ccc;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width:0;
+                    height: 1px;
+                    background-color: #e4007e;
+                    bottom: 0;
+                    left:0;
+                    transition: .6s;
+                }
+            }
+            .new-note{
+                color: #999;
+                font-size: 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            &:hover{
+                .new-title{
+                    color: #e4007e;
+                }
+                .new-date{
+                    border-bottom:1px solid transparent;
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

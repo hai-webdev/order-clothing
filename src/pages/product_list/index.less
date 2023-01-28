@@ -1,0 +1,56 @@
+@black: #333;
+@lightGray: #eee;
+@red: #e4007e;
+// 产品内容
+.product-container {
+    background-color: #fff;
+    padding-top: 10px;
+
+    ul.product-list {
+        margin-left: 30px;
+        width: calc(100% - 250px);
+        margin-bottom: 100px;
+        li.product-item {
+            margin: 0 10px 20px;
+            width: calc(100% / 3 - 20px);
+            transition: .4s;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .title {
+                padding: 25px 18px;
+                font-size: 16px;
+                text-align: center;
+                line-height: 1.5;
+                background-color: #f2f2f2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.pagelist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+    a{
+        border: 1px solid #bcbcbc;
+        border-radius: 4px;
+        padding: 4px 6px;
+        margin: 0 4px;
+        font-size: 12px;
+        &[href="javascript:;"]{
+            cursor: auto;
+        }
+        &.active{
+            color: #e4007e;
+        }
+    }
+}

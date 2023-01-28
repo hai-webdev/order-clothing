@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳市欣煜服装有限公司</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+</head>
+
+<body>
+    <!-- 引入公共页头 -->
+    <%= require("html-loader!../common/header/index.html") %>
+    <section class="product-container container-fluid">
+        <div class="center80 clearF">
+            <aside class="left-aside fl">
+                <!-- 引入左侧分类 -->
+                <%= require("html-loader!../common/aside/index.html") %>
+                <div class="company-info">
+                    <p>地址：深圳市宝安区西乡街道办共和工业路56号二楼</p>
+                    <p>电话：13510344008</p>
+                    <p>传真：13510344008</p>
+                    <p>邮箱：2567726906@qq.com </p>
+                    <p>网址：http://www.com</p>
+                    <div class="qrcode">
+                        <img src="/public/img/qrcode.jpg" alt="">
+                        <p>微信扫二维码立即咨询</p>
+                    </div>
+                </div>
+            </aside>
+            <div class="right-content fl">
+                <div class="cont1-header">
+                    <h1 class="title">夏季新款短袖套装男薄款劳保服上衣汽修服 工地维修工程服定制</h1>
+                    <div class="cont1-bottom">
+                        <button class="inquiry">立即询盘</button>
+                        <div class="price">
+                            <small>￥</small>
+                            <span>199.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont2-share">
+                    <span>分享到：</span>
+                    <div class="social-share" data-disabled="douban,linkedin,diandian,twitter,google"></div>
+                </div>
+                <div class="cont3-banner">
+                    <div class="swiper-container swiper-product">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="/public/img/product-item1.jpg">
+                                    <img src="/public/img/product-item.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="cont4-details">
+                    <h2 class="details-title">产品详情</h2>
+                    <div class="details-view">
+                        <img src="/public/img/details.jpg" alt="">
+                        <img src="/public/img/details.jpg" alt="">
+                        <img src="/public/img/details.jpg" alt="">
+                        <img src="/public/img/details.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+    <div class="alert-form">
+        <div class="mask-bg"></div>
+        <div class="form-wrapper">
+            <h2 class="form-title">咨询表单</h2>
+            <div class="close">
+                <span></span>
+                <span></span>
+            </div>
+            <form action="">
+                <label for="">
+                    <input type="text" placeholder="联系人：">
+                </label>
+                <label for="">
+                    <input type="text" placeholder="电话/邮箱：">
+                </label>
+                <label for="">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="最多输入250个字"></textarea>
+                </label>
+                <label for="" class="vcode">
+                    <img src="/public/img/code.png" alt="">
+                    <input type="text" placeholder="请输入验证码">
+                </label>
+                <button type="submit">提交</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+</body>
+
+</html>

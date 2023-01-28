@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线留言-深圳市欣煜服装有限公司</title>
+</head>
+
+<body>
+    <!-- 引入公共页头 -->
+    <%= require("html-loader!../common/header/index.html") %>
+    <section class="message-form">
+        <div class="message-wrap center80 clearF">
+            <div class="left-img fl w50">
+                <img src="/public/img/form-img.jpg" alt="">
+            </div>
+            <div class="right-form fl w50">
+                <form action="">
+                    <h2>在线表单</h2>
+                    <label for="">
+                        <div class="title">
+                            姓名<span>*</span>
+                        </div>
+                        <input type="text" placeholder=" ">
+                    </label>
+                    <label for="">
+                        <div class="title">
+                            邮箱
+                        </div>
+                        <input type="text" placeholder=" ">
+                    </label>
+                    <label for="">
+                        <div class="title">
+                            电话<span>*</span>
+                        </div>
+                        <input type="text" placeholder=" ">
+                    </label>
+                    <label for="">
+                        <div class="title">
+                            留言
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <label for="">
+                        <div class="title">
+                            
+                        </div>
+                        <input type="submit">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

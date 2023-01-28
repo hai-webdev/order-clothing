@@ -1,0 +1,39 @@
+@media screen and (max-width: 1440px){
+    .product-container .left-aside {
+        width: 140px;
+      }
+      .product-container{
+          .center80{
+              width: 96%;
+              ul.product-list{
+                  margin-left: 10px;
+                  width: calc( 100% - 160px);
+              }
+          }
+      }
+}
+
+@media screen and (max-width:768px){
+    .product-container{
+        .center80 {
+            .left-aside{
+                width: 100%;
+                .product-cate{
+                    display: none;
+                }
+                .mobile-product-cate{
+                    display: block;
+                }
+            }
+            ul.product-list{
+                right: 0;
+                margin-left: 0;
+                width: 100%;
+                .product-item{
+                    margin: 0 5px 10px;
+                    width: calc(50% - 10px);
+                }
+            }
+        }
+    }
+}
